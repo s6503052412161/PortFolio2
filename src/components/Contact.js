@@ -67,7 +67,6 @@ export const Contact = () => {
                       <Col size={12} sm={4} className="px-1">
                         <input type="tel" value="0802190243" disabled />
                       </Col>
-
                       {
                         status.message &&
                         <Col>
