@@ -1,11 +1,11 @@
+import React from 'react';
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/Resume.png";
 import projImg3 from "../assets/img/Project1.png";
-import colorSharp2 from "../assets/img/color-sharp2.png";
+import colorSharp2 from "../assets/img/bg.jpg";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+
 
 export const Projects = () => {
 
@@ -15,8 +15,8 @@ export const Projects = () => {
       description: "Design & Development",
       imgUrl: projImg3,
     },
-
   ];
+
 
   return (
     <section className="project" id="projects">
@@ -27,14 +27,14 @@ export const Projects = () => {
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                   <h2>Projects</h2>
-                  <p>I'm Do Project , Resume and Youtube  </p>
+                  <p style={{color:"#fff"}}>I'm Do Project , Resume and Youtube  </p>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                       <Nav.Item>
                         <Nav.Link eventKey="first">Project</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="second">Resume</Nav.Link>
+                        <Nav.Link eventKey="second">Project</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
                         <Nav.Link eventKey="third">Other</Nav.Link>
@@ -43,24 +43,20 @@ export const Projects = () => {
                     <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                       <Tab.Pane eventKey="first">
                         <Row>
-                          {
-                            projects.map((project, index) => {
-                              return (
-                                <ProjectCard
-                                  key={index}
-                                  {...project}
-                                />
-                              )
-                            })
-                          }
+                          {projects.map((project, index) => (
+                            <ProjectCard key={index} {...project} />
+                          ))}
                         </Row>
                       </Tab.Pane>
-                      <Tab.Pane eventKey="section">
-                        <img src={projImg2} alt="ProjImg2" />
+                      <Tab.Pane eventKey="second">
+                      <Row>
+                          {projects.map((project, index) => (
+                            <ProjectCard key={index} {...project} />
+                          ))}
+                        </Row>
                       </Tab.Pane>
-
                       <Tab.Pane eventKey="third">
-                        <p>I'm very new in Development website , FrontEnd and BackEnd.</p>
+                        <p style={{color:"#fff"}}>I'm very new in Development website , FrontEnd and BackEnd.</p>
                       </Tab.Pane>
                     </Tab.Content>
                   </Tab.Container>
@@ -69,7 +65,9 @@ export const Projects = () => {
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={colorSharp2}></img>
+      <img className="background-image-center"  style={{
+          position: "absolute", top: 0, left: 0, zIndex: -1, width: "100%",height: "100%", objectFit: "cover" ,
+        }} src={colorSharp2} alt="Image" />
     </section>
-  )
-}
+  );
+};

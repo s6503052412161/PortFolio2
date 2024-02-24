@@ -4,6 +4,7 @@ import headerImg from "../assets/img/Hero.jpg";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import CVFile from "../assets/img/Sappawat.pdf";
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -13,6 +14,10 @@ export const Banner = () => {
   const [index, setIndex] = useState(1);
   const toRotate = [ "Web Developer", "Web Designer", "UI/UX Designer" ];
   const period = 2000;
+  const downloadCV = () => {
+    window.open(CVFile); // Open the CV file in a new tab
+  };
+
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -58,7 +63,7 @@ export const Banner = () => {
                 <span className="tagline">Welcome to my Portfolio</span>
                 <h1>{`Hi! I'm Max`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
                   <p style={{color:"#fff"}}>Welcome To my Portfolio. I'm Graduated with a bachelor's degree from King Mongkut's University of Technology North Bangkok.</p>
-                  <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
+                  <button onClick={downloadCV}>Download CV <ArrowRightCircle size={25} /></button>
               </div>}
             </TrackVisibility>
           </Col>
