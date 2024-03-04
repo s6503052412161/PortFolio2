@@ -27,7 +27,7 @@ export const Projects = () => {
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                   <h2>Projects</h2>
-                  <p style={{color:"#fff"}}>I'm do Project and Other  </p>
+                  <p style={{color:"white"}}>I'm do FrontEnd and UX/UI Project and Other  </p>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                       <Nav.Item>
@@ -56,7 +56,7 @@ export const Projects = () => {
                         </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
-                        <p style={{color:"#fff"}}>I'm very new in Development website , FrontEnd and BackEnd.</p>
+                        <p style={{color:"white"}}>I'm very new in Development website , UX/UI , FrontEnd and BackEnd.</p>
                       </Tab.Pane>
                     </Tab.Content>
                   </Tab.Container>
