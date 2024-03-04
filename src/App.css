@@ -303,7 +303,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Skills Css ************/
 .skill {
-  background-color:#E6E6FA;
+  background-color:#FF69B4;
   padding: 0 0 50px 0;
   position: relative;
 }
@@ -345,7 +345,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Projects Css ************/
 .project {
-  background:#4B0082;
+  background:#9370DB;
   padding: 80px 0;
   position: relative;
 }
@@ -471,7 +471,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Projects Css ************/
 .contact {
-  background: #E6E6FA;
+  background: #FF69B4;
   padding: 60px 0 200px 0;
 }
 .contact img {
@@ -522,6 +522,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .contact form button span {
   z-index: 1;
   position: relative;
+  
 }
 .contact form button:hover {
   color: #fff;
@@ -544,7 +545,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Footer Css ************/
 .footer {
   padding: 0 0 50px 0;
-  background-color:#4B0082;
+  background-color:#9370DB;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
