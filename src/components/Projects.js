@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import projImg3 from "../assets/img/Project1.png";
+import projImg2 from "../assets/img/figma.png";
 import colorSharp2 from "../assets/img/bg.jpg";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -14,6 +15,11 @@ export const Projects = () => {
       title: "Microservice",
       description: "Design & Development",
       imgUrl: projImg3,
+    },
+    {
+      title: "Figma Design",
+      description: "Design FrontEnd",
+      imgUrl: projImg2,
     },
   ];
 
@@ -46,6 +52,7 @@ export const Projects = () => {
                           {projects.map((project, index) => (
                             <ProjectCard key={index} {...project} />
                           ))}
+                         
                         </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="second">
