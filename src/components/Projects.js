@@ -3,6 +3,7 @@ import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import projImg3 from "../assets/img/Project1.png";
 import projImg2 from "../assets/img/figma.png";
+import projImg1 from "../assets/img/react.png";
 import colorSharp2 from "../assets/img/bg.jpg";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -20,6 +21,11 @@ export const Projects = () => {
       title: "Figma Design",
       description: "Design FrontEnd",
       imgUrl: projImg2,
+    },
+    {
+      title: "React",
+      description: "learning React",
+      imgUrl: projImg1,
     },
   ];
 
