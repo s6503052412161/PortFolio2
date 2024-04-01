@@ -267,7 +267,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 96%;
 }
 .banner button {
-  color: black;
+  color: rgb(255, 57, 57);
   font-weight: 700;
   font-size: 20px;
   margin-top: 60px;
@@ -485,10 +485,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .contact {
   background: beige;
   padding: 60px 0 200px 0;
+  
 }
 .contact img {
   width: 92%;
 }
+
 .contact h2 {
 	font-size: 45px;
 	font-weight: 700;
@@ -507,6 +509,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 18px;
   letter-spacing: 0.8px;
   transition: 0.3s ease-in-out;
+  text-align: center;
 }
 .contact form input:focus, .contact form textarea:focus {
   background: rgb(0, 0, 0);

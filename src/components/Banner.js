@@ -12,7 +12,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Web Developer", "Web Designer", "UI/UX Designer" ];
+  const toRotate = ["Web Developer", "Web Designer", "UI/UX Designer"];
   const period = 2000;
   const downloadCV = () => {
     window.open(CVFile); // Open the CV file in a new tab
@@ -59,19 +59,24 @@ export const Banner = () => {
           <Col xs={12} md={6} xl={7}>
             <TrackVisibility>
               {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Max`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p style={{color:"black"}}>Welcome To my Portfolio. I'm Graduated with a bachelor's degree from King Mongkut's University of Technology North Bangkok.</p>
-                  <button onClick={downloadCV}>Download CV <ArrowRightCircle size={25} /></button>
-              </div>}
+                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+                  <span className="tagline">Welcome to my Portfolio</span>
+                  <h1>{`Hi! I'm Max`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
+                  <p style={{ color: "black" }}>Welcome To my Portfolio. I'm Graduated with a bachelor's degree from King Mongkut's University of Technology North Bangkok.</p>
+                  <button onClick={downloadCV}>Download CV <ArrowRightCircle size={30} /></button>
+                </div>}
             </TrackVisibility>
           </Col>
           <Col xs={12} md={6} xl={5}>
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                  <img src={headerImg} alt="Header Img"style={{ borderRadius: "50%", width: "300px" , height: "300px" }} />
+                  <img src={headerImg} alt="Header Img" style={{
+                    borderRadius: "50%",
+                    width: "350px",
+                    height: "400px",
+                    overflow: "hidden",
+                  }} />
                 </div>}
             </TrackVisibility>
           </Col>
